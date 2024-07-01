@@ -1,0 +1,96 @@
+rows = +prompt("enter rows : ")
+
+for(i=1;i<=rows;i++)
+{
+    s=""
+    for(j=1;j<=i;j++)
+    {
+        s = s+ " "
+    }
+    
+    for(k=1;k<=rows-i+1;k++)
+    {
+        s=s+"* "
+    }
+    console.log(s)
+}
+
+rows = +prompt("enter rows : ")
+for(i = 1;i <= rows;i++)
+{
+    s = ""
+    if(i%2 === 1)
+    {
+        for(j=1;j<=i;j++)
+        {
+          if(j%2==1)
+          {
+            s = s+1+" "
+          }
+          else 
+          {
+          s =  s+0+" "
+          }
+        }
+    
+    }
+    else
+    {
+         for(j=1;j<=i;j++)
+        {
+            if(j%2==0)
+             {
+             s = s +1+" "
+             }
+             else
+             {
+              s = s +0+" "
+             }
+        }
+    }
+    console.log(s)
+}
+
+
+rows = +prompt("enter rows : ")
+
+for(i=1;i<=rows;i++)
+{
+    s = ""
+    for(j=1;j<=rows;j++)
+    {
+        if(j==1  || i==1 || i == rows || j ==rows )
+        {
+            s = s + "* "
+        }
+        else {
+            s += "  ";
+        }
+    }
+    console.log(s)
+}
+
+
+
+
+o/p:
+
+node /tmp/chOOg02hEr.js
+enter rows : 5
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+enter rows : 5
+1 
+0 1 
+1 0 1 
+0 1 0 1 
+1 0 1 0 1 
+enter rows : 5
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
